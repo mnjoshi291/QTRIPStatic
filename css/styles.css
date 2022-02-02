@@ -127,7 +127,7 @@ footer {
 .adventure-card {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
-  height:20rem;
+  height:30rem;
   border-radius: 8px;
 }
 .adventure-card img {
