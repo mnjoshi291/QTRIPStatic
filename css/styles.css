@@ -51,25 +51,46 @@ footer {
 .tile {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  position: relative;
+  text-align: center;
+  padding-top: 15px;
 }
-.tile img {
+.tile> img {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  width: 15rem;
+  height: 19rem;
+  border-radius: 5px;
+  object-fit: cover;
 }
-.tile img:hover {
+.tile > img:hover {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  filter: brightness(50%);
+  cursor: pointer;
 }
 
 /* Hint: Notice the position:absolute and z-index properties. */
 /* Think about how those in relation to the existing "tile" classes. */
-.tile-text {
+.tile >div{
   position: absolute;
   z-index: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
+  color: white;
+  left: 5rem;
+  bottom:2.5rem;
+  font-size: 1.2rem;
 }
-
+.tile >span{
+  position: absolute;
+  z-index: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  bottom:1rem;
+  left: 5rem;
+}
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -78,13 +99,19 @@ footer {
   /* TODO: MODULE_LAYOUT */
   /* 1. Set a specific height. */
   /* 2. Position and center the image to scale nicely on all screens. */
+  height:16rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
 }
 
-.hero-subheading {
+.hero-image >h2 ,.hero-image >h2 {
   font-size: 24px;
   font-weight: 100;
 }
-.hero-input {
+.hero-image >input {
   width: 80%;
   height: 50px;
   padding: 16px;
